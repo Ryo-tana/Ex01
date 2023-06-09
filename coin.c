@@ -14,8 +14,8 @@ int main(void){
         int d2 = rand()%6+1;
         printf("Die 1: %d\nDie 2: %d\nTotal value: %d\n",d1,d2,d1+d2);
         if((d1+d2)>7){
-                printf("You won\n");
+                printf("%s won\n",name);
         }else{
-                printf("You lost\n");
+                printf("%s lost\n",name);
         }
 }
