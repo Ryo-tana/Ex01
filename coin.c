@@ -3,11 +3,11 @@
 #include <time.h>
 #include <unistd.h>
 int main(void){
-        srand(time(NULL));
         printf("What is your name?\n> ");
         char name[10];
         scanf("%s",name);
         printf("Hello, %s!\n",name);
+        srand(time(NULL));
         printf("Rolling dice...\n");
         int d1 = rand()%6+1;
         sleep(1);
